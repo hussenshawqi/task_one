@@ -1,8 +1,9 @@
 void main() {
-  List<int> number = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89];
-  for (var number in number) {
-    if (number < 5) {
-      print(number);
-    }
-  }
+  List<int> a = [5, 10, 15, 20, 25];
+  List b = getFirstAndLastNumber(a);
+  print(b);
+}
+
+List getFirstAndLastNumber(List a) {
+  return [a.first, a.last];
 }
